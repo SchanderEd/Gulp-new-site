@@ -1,5 +1,9 @@
-%tplborder { // Шаблон SCSS. %НАЗВАНИЕ_ШАБЛОНА
-    border-bottom: 5px dashed red; 
+%buttonLight {
+    padding: 12px 50px 12px 20px;
+    background-color: transparent;
+    border-color: rgba(6, 0, 43, 1);
+    border-radius: 5px;
+    text-transform: uppercase;
 }
 
 .test { // Или можно шаблон задать, как обычный класс

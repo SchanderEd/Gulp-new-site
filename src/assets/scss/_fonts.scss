@@ -8,8 +8,12 @@
   }
 }
 
-@include fonts('Шрифт', url(../fonts/), 300, swap, normal); // Light
-@include fonts('Шрифт', url(../fonts/), 400, swap, normal); // Regular
-@include fonts('Шрифт', url(../fonts/), 500, swap, normal); // Medium
-@include fonts('Шрифт', url(../fonts/), 700, swap, normal); // Bold
-@include fonts('Шрифт', url(../fonts/), 800, swap, normal); // ExtraBold
+@include fonts('Inter', url(../fonts/Inter-Light.ttf), 300, swap, normal); // Light
+@include fonts('Inter', url(../fonts/Inter-Regular.ttf), 400, swap, normal); // Regular
+@include fonts('Inter', url(../fonts/Inter-Medium.ttf), 500, swap, normal); // Medium
+@include fonts('Inter', url(../fonts/Inter-Bold.ttf), 700, swap, normal); // Bold
+@include fonts('Inter', url(../fonts/Inter-ExtraBold.ttf), 800, swap, normal); // ExtraBold
+
+body {
+  font-family: 'Inter';
+}

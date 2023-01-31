@@ -12,10 +12,12 @@ const cssnano = require("gulp-cssnano");
 const rigger = require("gulp-rigger");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
+const sprites = require("gulp-svg-sprite");
 const panini = require("panini");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
 const notify = require("gulp-notify");
+const svgSprite = require("gulp-svg-sprite");
 const browserSync = require("browser-sync").create();
 
 /* Paths */
@@ -28,6 +30,7 @@ const path = {
     css: `${distPath}assets/css/`,
     js: `${distPath}assets/js/`,
     images: `${distPath}assets/images/`,
+    svg: `${distPath}assets/sprites/`,
     fonts: `${distPath}assets/fonts/`
   },
   src: {
@@ -35,6 +38,7 @@ const path = {
     css: `${srcPath}assets/scss/*.scss`,
     js: `${srcPath}assets/js/*.js`,
     images: `${srcPath}assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}`,
+    svg: `${srcPath}assets/sprites/*.svg`,
     fonts: `${srcPath}assets/fonts/**/*.{eot,woff,woff2,ttf,svg}`
   },
   watch: {
@@ -42,6 +46,7 @@ const path = {
     js: `${srcPath}assets/js/*.js`,
     css: `${srcPath}assets/scss/*.scss`,
     images: `${srcPath}assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}`,
+    svg: `${srcPath}assets/sprites/*.svg`,
     fonts: `${srcPath}assets/fonts/**/*.{eot,woff,woff2,ttf,svg}`
   },
   clean: `./${distPath}`
@@ -131,6 +136,30 @@ function images() {
     .pipe(browserSync.reload({ stream: true }))
 }
 
+function svgSprites() {
+  return src(path.src.svg, { base: `${srcPath}assets/sprites/` })
+    .pipe(plumber({
+      errorHandler: function (err) {
+        notify.onError({
+          title: "Sprites Error",
+          message: "Error: <%= error.message %>"
+        })(err);
+        this.emit('end');
+      }
+    }))
+
+    .pipe(sprites({
+      mode: {
+        stack: {
+          sprite: `../assets/sprites/sprite.svg`,
+          example: true
+        }
+      }
+    }))
+
+    .pipe(dest(path.build.svg))
+}
+
 function fonts() {
   return src(path.src.fonts, { base: `${srcPath}assets/fonts/` })
     .pipe(dest(path.build.fonts))
@@ -146,16 +175,18 @@ function watchFiles() {
   gulp.watch([path.watch.css], css)
   gulp.watch([path.watch.js], js)
   gulp.watch([path.watch.images], images)
+  gulp.watch([path.watch.svg], svgSprites)
   gulp.watch([path.watch.fonts], fonts)
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts))
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, svgSprites, fonts))
 const watch = gulp.parallel(build, watchFiles, serve)
 
 exports.html = html
 exports.css = css
 exports.js = js
 exports.images = images
+exports.svgSprites = svgSprites
 exports.fonts = fonts
 exports.clean = clean
 exports.build = build

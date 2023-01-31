@@ -133,6 +133,7 @@ function images() {
 
 function fonts() {
   return src(path.src.fonts, { base: `${srcPath}assets/fonts/` })
+    .pipe(dest(path.build.fonts))
     .pipe(browserSync.reload({ stream: true }))
 }
 

@@ -1,0 +1,15 @@
+@mixin fonts($font-family, $srcWoff, $fw, $fd, $fs) {
+  @font-face {
+    font-family: $font-family;
+    src: $srcWoff;
+    font-weight: $fw;
+    font-display: $fd;
+    font-style: $fs;
+  }
+}
+
+@include fonts('Шрифт', url(../fonts/), 300, swap, normal); // Light
+@include fonts('Шрифт', url(../fonts/), 400, swap, normal); // Regular
+@include fonts('Шрифт', url(../fonts/), 500, swap, normal); // Medium
+@include fonts('Шрифт', url(../fonts/), 700, swap, normal); // Bold
+@include fonts('Шрифт', url(../fonts/), 800, swap, normal); // ExtraBold

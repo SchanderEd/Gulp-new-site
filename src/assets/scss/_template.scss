@@ -1,0 +1,7 @@
+%tplborder { // Шаблон SCSS. %НАЗВАНИЕ_ШАБЛОНА
+    border-bottom: 5px dashed red; 
+}
+
+.test { // Или можно шаблон задать, как обычный класс
+    font-size: 50px;
+}

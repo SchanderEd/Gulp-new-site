@@ -6,13 +6,675 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/normalize.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style.min.css">
-  <title>New</title>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+  <title>TET</title>
 </head>
 
 <body>
 
-  <script src="./assets/js/main.min.js"></script>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <a href="#" class="header__logo-link"><img src="./assets/images/logo.png" alt="" class="logo-img"></a>
+        <button class="header__burger-btn">
+          <svg width="32px" height="22px">
+            <path fill-rule="evenodd" fill="rgba(84, 119, 187, 1)"
+              d="M-0.000,-0.000 L17.000,-0.000 L17.000,2.000 L-0.000,2.000 L-0.000,-0.000 Z" />
+            <path fill-rule="evenodd" fill="rgba(84, 119, 187, 1)"
+              d="M-0.000,7.000 L17.000,7.000 L17.000,9.000 L-0.000,9.000 L-0.000,7.000 Z" />
+            <path fill-rule="evenodd" fill="rgba(84, 119, 187, 1)"
+              d="M-0.000,14.000 L17.000,14.000 L17.000,16.000 L-0.000,16.000 L-0.000,14.000 Z" />
+          </svg></button>
+        <div class="header__top-right">
+          <ul class="header__top-list">
+            <li class="header__top-item"><a href="" class="header__top-link"><svg class="phone-svg">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#phone"></use>
+                </svg>+38 044 154 13 14</a></li>
+            <li class="header__top-item"><a href="" class="header__top-link btn-social"><svg class="viber-svg">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#viber"></use>
+                </svg></a></li>
+            <li class="header__top-item"><a href="" class="header__top-link btn-social"><svg class="telegram-svg">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#telegram"></use>
+                </svg></a></li>
+          </ul>
+          <button class="header__top-btn">Оставить заявку</button>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item"><a href="#" class="header__nav-link">О компании</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Наши услуги</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Экспресс аудит</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Экспресс аудит</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Блог</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="header__burger-menu">
+      <ul class="header__burger-nav-list">
+        <li class="header__nav-item"><a href="#" class="header__nav-link">О компании</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">Наши услуги</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">Экспресс аудит</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">Экспресс аудит</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">Блог</a></li>
+        <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+      </ul>
+      <a href="" class="header__top-link"><svg class="phone-svg">
+          <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#phone"></use>
+        </svg>+38 044 154 13 14</a>
+      <button class="header__top-btn">Оставить заявку</button>
+      <div class="header__burger-social-block">
+        <a href="" class="header__top-link btn-social"><svg class="viber-svg">
+            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#viber"></use>
+          </svg></a>
+        <a href="" class="header__top-link btn-social"><svg class="telegram-svg">
+            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#telegram"></use>
+          </svg></a>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="about-us">
+      <div class="container">
+        <div class="about-us__top">
+          <div class="about-us__top-right">
+            <h2 class="about-us__top-heading">С нами<br>все сложится!</h2>
+            <ul class="about-us__top-list">
+              <li class="about-us__top-item">
+                <p class="about-us__top-descr">бухгалтерское сопровождение</p>
+              </li>
+              <li class="about-us__top-item">
+                <p class="about-us__top-descr">аудиторские услуги</p>
+              </li>
+              <li class="about-us__top-item">
+                <p class="about-us__top-descr">налоговый консалтинг</p>
+              </li>
+              <li class="about-us__top-item">
+                <p class="about-us__top-descr">управленческий учет</p>
+              </li>
+            </ul>
+          </div>
+          <form action="" class="about-us__form">
+            <p class="about-us__form-descr">Получите надежное бухгалтерское обслуживание с гарантиями и ответственностью
+              в договоре</p>
+            <input type="tel" placeholder="+7(_ _ _) _ _ _ - _ _ - _ _" class="about-us__form-tel" required>
+            <button class="about-us__form-btn">Консультация</button>
+          </form>
+        </div>
+        <div class="about-us__bottom">
+          <div class="about-us__bottom-inner">
+            <h2 class="about-us__bottom-heading">О нас</h2>
+            <strong class="about-us__bottom-strong">Аудиторская фирма ТЕТ успешно оказывает услуги с 1995г.</strong>
+            <p class="about-us__bottom-descr">За это время мы сформировали команду профессионалов в сфере
+              бухгалтерского,
+              управленческого учета и аудита, поэтому можем гарантировать компетентность наших сотрудников и высокое
+              качество наших услуг. </p>
+          </div>
+          <div class="descr-decor">
+            <p class="about-us__bottom-descr">Среди наших клиентов не только украинские компании, но и компании
+              нерезиденты различных форм собственности. Наша компания имеет официальное подтверждение АПУ о соответствии
+              системы контроля качества и сертифицированных штатных аудиторов. </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experts">
+      <div class="container experts__container">
+        <div class="experts__top">
+          <div class="swiper__btn-wrapper">
+            <button class="swiper-button-prev experts__button-prev"><svg class="arrow-slide">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right"></use>
+              </svg></button>
+            <button class="swiper-button-next experts__button-next"><svg class="arrow-slide">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right"></use>
+              </svg></button>
+          </div>
+          <h2 class="experts__heading">Команда экспертов</h2>
+          <strong class="experts__strong">Ни один специалист не будет эффективнее целой команды!</strong>
+          <!-- Slider main container -->
+          <div class="swiper swiper-experts">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper experts__top">
+              <!-- Slides -->
+              <article class="swiper-slide experts__card">
+                <img src="./assets/images/exp.png" alt="" class="experts__card-photo">
+                <p class="experts__name">Иванова Наталья Васильевна</p>
+                <p class="experts__post">Ведущий бухгалтер</p>
+              </article>
+              <article class="swiper-slide experts__card">
+                <img src="./assets/images/exp2.png" alt="" class="experts__card-photo">
+                <p class="experts__name">Васильева Анастасия</p>
+                <p class="experts__post">Первичник</p>
+              </article>
+              <article class="swiper-slide experts__card">
+                <img src="./assets/images/exp3.png" alt="" class="experts__card-photo">
+                <p class="experts__name">Иванов Петр Геннадиевич</p>
+                <p class="experts__post">Ведущий бухгалтер</p>
+              </article>
+              <article class="swiper-slide experts__card">
+                <img src="./assets/images/exp4.png" alt="" class="experts__card-photo">
+                <p class="experts__name">Васильева Анастасия Игоревна</p>
+                <p class="experts__post">Первичник</p>
+              </article>
+              <article class="swiper-slide experts__card">
+                <img src="./assets/images/exp.png" alt="" class="experts__card-photo">
+                <p class="experts__name">Иванова Наталья Васильевна</p>
+                <p class="experts__post">Ведущий бухгалтер</p>
+              </article>
+              <article class="swiper-slide experts__card">
+                <img src="./assets/images/exp2.png" alt="" class="experts__card-photo">
+                <p class="experts__name">Васильева Анастасия</p>
+                <p class="experts__post">Первичник</p>
+              </article>
+              <article class="swiper-slide experts__card">
+                <img src="./assets/images/exp3.png" alt="" class="experts__card-photo">
+                <p class="experts__name">Иванов Петр Геннадиевич</p>
+                <p class="experts__post">Ведущий бухгалтер</p>
+              </article>
+              <article class="swiper-slide experts__card">
+                <img src="./assets/images/exp4.png" alt="" class="experts__card-photo">
+                <p class="experts__name">Васильева Анастасия Игоревна</p>
+                <p class="experts__post">Первичник</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="experts__middle">
+          <div class="experts__middle-info-block">
+            <strong class="experts__middle-heading">Как бы стремительно не менялся мир, но</strong>
+            <strong class="experts__middle-strong">грамотная финансовая отчетность продолжает определять успешность и
+              обоснованность управленческих решений. </strong>
+            <p class="experts__middle-descr">Наш опыт в сфере бухгалтерского и управленческого учета позволяет
+              оперативно оценить состояние предприятия, подготовить все виды отчетности и уберечь от возможных убытков и
+              штрафов.</p>
+          </div>
+          <div class="experts__middle-list-block">
+            <h4 class="experts__list-heading">мы Помогаем:</h4>
+            <ul class="experts__list">
+              <li class="experts__item">
+                <p class="experts__item-info">эффективно планировать</p>
+              </li>
+              <li class="experts__item">
+                <p class="experts__item-info">контролировать</p>
+              </li>
+              <li class="experts__item">
+                <p class="experts__item-info">распределять ответственность</p>
+              </li>
+              <li class="experts__item">
+                <p class="experts__item-info">оптимизировать налогообложение</p>
+              </li>
+              <li class="experts__item">
+                <p class="experts__item-info">привлекать заемные средства</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <strong class="experts__strong-info">Компетентная коммуникация с фискальными службами - мы всегда на вашей
+          стороне.</strong>
+        <div class="experts__bottom">
+          <div class="experts__bottom-block">
+            <p class="experts__bottom-info"><strong class="experts__bottom-strong">Большой опыт</strong>досудебных и
+              судебных споров с налоговой. Миллионы гривен отмененных штрафных санкций</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <h2 class="services__heading">Наши услуги</h2>
+        <div class="services__card-container">
+          <article class="services__card">
+            <h3 class="services__card-heading"><svg class="svg-budgeting svg-services">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#budgeting"></use>
+              </svg>Бухгалтерский учет</h3>
+            <ul class="services__card-list">
+              <li class="services__card-item">
+                <p class="services__card-info">Ведение бухгалтерского учета</p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Восстановление бухгалтерского учета</p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Постановка бухгалтерского учета </p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Ведение кадрового учет</p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Единоразовая подача отчетности</p>
+              </li>
+            </ul>
+          </article>
+          <article class="services__card">
+            <h3 class="services__card-heading"><svg class="svg-audit svg-services">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#audit"></use>
+              </svg>Аудит</h3>
+            <ul class="services__card-list">
+              <li class="services__card-item">
+                <p class="services__card-info">Экспресс аудит</p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Налоговый аудит </p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Инициативный аудит предприятия</p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Обязательный аудит предприятия</p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Аудиторское сопровождение</p>
+              </li>
+            </ul>
+          </article>
+          <article class="services__card">
+            <h3 class="services__card-heading"><svg class="svg-uchet svg-services">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#uchet"></use>
+              </svg>Управленческий учет</h3>
+            <ul class="services__card-list">
+              <li class="services__card-item">
+                <p class="services__card-info">Написание учетной политики компании</p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Разработка системы отчетности для ведения управленческого учета</p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Внедрение управленческого учета на базе 1С</p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Подбор системы финансовых показателей для контроля финансового состояния
+                  компании</p>
+              </li>
+            </ul>
+          </article>
+          <article class="services__card">
+            <h3 class="services__card-heading"><svg class="svg-examination svg-services">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#examination"></use>
+              </svg>Налоговая практика</h3>
+            <ul class="services__card-list">
+              <li class="services__card-item">
+                <p class="services__card-info">Сопровождение проверок</p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Досудебные и судебные споры с налоговой</p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Разблокировка налоговых накладных</p>
+              </li>
+              <li class="services__card-item">
+                <p class="services__card-info">Налоговое планирование и оптимизация</p>
+              </li>
+            </ul>
+          </article>
+        </div>
+        <div class="services__outsourcing">
+          <div class="services__outsourcing-left">
+            <h2 class="services__outsourcing-heading">Аутсорсинг бухгалтерии</h2>
+            <p class="services__outsourcing-descr">Бизнес предпочитает фокусироваться на своих целевых процессах, а
+              непрофильные функции отдавать сторонним специалистам. Если раньше аутсорсинг бухгалтерии рассматривался
+              исключительно с точки зрения экономии на штатном бухгалтере, то сейчас к нему обращаются с целью
+              <strong class="services__outsourcing-descr-strong">достичь конкурентных преимуществ, снижения финансовых
+                рисков и повышения рентабельности бизнеса.
+              </strong>
+            </p>
+          </div>
+          <div class="services__outsourcing-right">
+            <div class="services__outsourcing-info-block">
+              <p class="services__outsourcing-right-info">
+                <strong class="services__outsourcing-right-strong">70%</strong>
+                компаний в мире пользуются услугами бухгалтера на аутсорсе
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="who">
+      <div class="container who__container">
+        <div class="who__left">
+          <h2 class="who__heading">Кому подходит<strong class="who__strong">бухгалтерский аутсорсинг</strong></h2>
+          <article class="who__card">
+            <h5 class="who__card-heading">
+              <bold class="who__card-number">01. </bold>Стартапы
+            </h5>
+            <p class="who__card-descr">Аутсорсинг бухгалтерии дает возможность посвятить себя бизнес-процессам, не
+              распыляясь на вспомогательные функции.</p>
+          </article>
+          <article class="who__card">
+            <h5 class="who__card-heading">
+              <bold class="who__card-number">02. </bold>ФОПы, малые и средние предприятия
+            </h5>
+            <p class="who__card-descr">Бухгалтерское сопровождение позволит оптимизировать расходы на содержание
+              штатного специалиста. К тому же ожидать качественный результат и защиту от налоговых рисков от
+              бухгалтера-фрилансера точно не стоит</p>
+          </article>
+        </div>
+        <div class="who__right">
+          <article class="who__card">
+            <h5 class="who__card-heading">
+              <bold class="who__card-number">03. </bold>Сезонный бизнес
+            </h5>
+            <p class="who__card-descr">Содержать бухгалтерию в период спада активности невыгодно. Поэтому у компаний
+              сезонного бизнеса аутсорсинг бухгалтерских услуг пользуется спросом</p>
+          </article>
+          <article class="who__card">
+            <h5 class="who__card-heading">
+              <bold class="who__card-number">04. </bold>Иностранный бизнес
+            </h5>
+            <p class="who__card-descr">Бухгалтерское сопровождение позволит оптимизировать расходы на содержание
+              штатного специалиста. К тому же ожидать качественный результат и защиту от налоговых рисков от
+              бухгалтера-фрилансера точно не стоит</p>
+          </article>
+          <article class="who__card">
+            <h5 class="who__card-heading">
+              <bold class="who__card-number">05. </bold>Компании с двумя и более учредителями
+            </h5>
+            <p class="who__card-descr">Передача учетных функций обеспечивает прозрачность учета и независимость
+              бухгалтерии, равный доступ пользователей к результатам учета</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container advantages__container">
+        <div class="advantages__inner-top">
+          <div class="advantages__left">
+            <h2 class="advantages__heading">Наши преимущества</h2>
+            <article class="advantages__card">
+              <h5 class="advantages__card-heading">
+                <svg class="svg-advantages">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#chemodan"></use>
+                </svg>
+                Профессионализм
+              </h5>
+              <p class="advantages__card-descr">Наличие в штате сертифицированных аудиторов позволяет постоянно
+                проводить
+                контроль качества работы бухгалтеров, а автоматизация учетных процессов помогает исключить операционные
+                ошибки
+              </p>
+            </article>
+            <article class="advantages__card">
+              <h5 class="advantages__card-heading">
+                <svg class="svg-advantages">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#effency"></use>
+                </svg>
+                Эффективность
+              </h5>
+              <p class="advantages__card-descr">Гибкие условия сотрудничества. Снижение затрат на содержание штатных
+                специалистов. Отсутствие кадровых проблем и привязки к специалисту. Связь 24/7 без отпусков и больничных
+              </p>
+            </article>
+          </div>
+          <div class="advantages__right">
+            <article class="advantages__card">
+              <h5 class="advantages__card-heading">
+                <svg class="svg-advantages">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#shield"></use>
+                </svg>
+                Надежность
+              </h5>
+              <p class="advantages__card-descr">Страхуем профессиональную ответственность, несем финансовые гарантии за
+                нашу работу и гарантируем качество предоставляемых нами услуг
+              </p>
+            </article>
+            <article class="advantages__card">
+              <h5 class="advantages__card-heading">
+                <svg class="svg-advantages">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#detective"></use>
+                </svg>
+                Прозрачность
+              </h5>
+              <p class="advantages__card-descr">обеспечим объективное представление о финансовом состоянии компании
+              </p>
+            </article>
+            <article class="advantages__card">
+              <h5 class="advantages__card-heading">
+                <svg class="svg-advantages">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#spy"></use>
+                </svg>
+                Конфиденциальность
+              </h5>
+              <p class="advantages__card-descr">сохраняем полную конфиденциальность и информационную безопасность ваших
+                данных
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="advantages__inner-bottom">
+          <div class="advantages__inner-bottom-info">
+            <strong class="advantages__inner-strong">Мы растем вместе с нашими клиентами,</strong>
+            <p class="advantages__inner-info">поэтому делаем все, чтобы ваш бизнес был успешным!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="start">
+      <div class="container">
+        <h2 class="start__heading">С чего начать?</h2>
+        <div class="start__inner">
+          <ul class="start__list">
+            <li class="start__item">
+              <span class="start__item-number">1</span>
+              <h5 class="start__item-heading">Консультация</h5>
+              <p class="start__item-descr">Мы с радостью расскажем более подробно о нашей компании и предоставим
+                информацию об услугах.</p>
+            </li>
+            <li class="start__item">
+              <span class="start__item-number">2</span>
+              <h5 class="start__item-heading">Экспресс аудит</h5>
+              <p class="start__item-descr">Проводим экспресс аудит предприятия, обсуждаем детали, подбираем оптимальные
+                условия сотрудничества.
+              </p>
+            </li>
+            <li class="start__item">
+              <span class="start__item-number">3</span>
+              <h5 class="start__item-heading">Договор</h5>
+              <p class="start__item-descr">Согласуем и подписываем договор, Принимаем документы, ключи, доступы.
+                Организуем учет и документооборот.</p>
+            </li>
+          </ul>
+          <div class="start__block-request">
+            <div class="start__request-info">
+              <h5 class="start__request-heading">Экспресс аудит</h5>
+              <p class="start__request-info">Сделаем анализ состояния бухгалтерского учета вашей компании. Предоставим
+                рекомендации по оптимизации, сообщим о наличии ошибок и потенциальных налоговых рисках.</p>
+            </div>
+            <button class="start__btn-request">Оставить заявку</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="publications">
+      <div class="container publications__container">
+        <div class="publications__btn-block">
+          <button class="swiper-button-prev publications__button-prev"><svg class="arrow-slide">
+              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right"></use>
+            </svg></button>
+          <button class="swiper-button-next publications__button-next"><svg class="arrow-slide">
+              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right"></use>
+            </svg></button>
+        </div>
+        <h2 class="publications__heading">Публикации</h2>
+        <div class="swiper swiper-publications">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper swiper-wrapper-publications">
+            <!-- Slides -->
+            <article class="swiper-slide publications__card">
+              <img src="./assets/images/publ1.png" alt="" class="publications__card-photo">
+              <span class="publications__date">25.07.21</span>
+              <p class="publications__card-descr">Органический трафик даёт нам право принимать самостоятельные решения
+              </p>
+            </article>
+            <article class="swiper-slide publications__card">
+              <img src="./assets/images/publ2.png" alt="" class="publications__card-photo">
+              <span class="publications__date">25.07.21</span>
+              <p class="publications__card-descr">Органический трафик даёт нам право принимать самостоятельные решения
+              </p>
+            </article>
+            <article class="swiper-slide publications__card">
+              <img src="./assets/images/publ3.png" alt="" class="publications__card-photo">
+              <span class="publications__date">25.07.21</span>
+              <p class="publications__card-descr">Органический трафик даёт нам право принимать самостоятельные решения
+              </p>
+            </article>
+            <article class="swiper-slide publications__card">
+              <img src="./assets/images/publ1.png" alt="" class="publications__card-photo">
+              <span class="publications__date">25.07.21</span>
+              <p class="publications__card-descr">Органический трафик даёт нам право принимать самостоятельные решения
+              </p>
+            </article>
+            <article class="swiper-slide publications__card">
+              <img src="./assets/images/publ2.png" alt="" class="publications__card-photo">
+              <span class="publications__date">25.07.21</span>
+              <p class="publications__card-descr">Органический трафик даёт нам право принимать самостоятельные решения
+              </p>
+            </article>
+            <article class="swiper-slide publications__card">
+              <img src="./assets/images/publ3.png" alt="" class="publications__card-photo">
+              <span class="publications__date">25.07.21</span>
+              <p class="publications__card-descr">Органический трафик даёт нам право принимать самостоятельные решения
+              </p>
+            </article>
+          </div>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+    <section class="trust">
+      <div class="container trust__container">
+        <h2 class="trust__heading">Нам доверяют</h2>
+        <div class="trust__swiper__btn">
+          <button class="swiper-button-prev trust__prev"><svg class="arrow-slide">
+              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right"></use>
+            </svg></button>
+          <button class="swiper-button-next trust__next"><svg class="arrow-slide">
+              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right"></use>
+            </svg></button>
+        </div>
+        <!-- Slider main container -->
+        <div class="swiper trust__swiper">
+          <!-- Additional required wrapper -->
+          <!-- Slides -->
+          <ul class="swiper-wrapper trust__list">
+            <li class="swiper-slide trust__item">
+              <img src="./assets/images/trust1.png" alt="antarctica" class="trust__img">
+            </li>
+            <li class="swiper-slide trust__item">
+              <img src="./assets/images/trust2.png" alt="circle" class="trust__img">
+            </li>
+            <li class="swiper-slide trust__item">
+              <img src="./assets/images/trust3.png" alt="company" class="trust__img">
+            </li>
+            <li class="swiper-slide trust__item">
+              <img src="./assets/images/trust1.png" alt="antarctica" class="trust__img">
+            </li>
+            <li class="swiper-slide trust__item">
+              <img src="./assets/images/trust2.png" alt="circle" class="trust__img">
+            </li>
+            <li class="swiper-slide trust__item">
+              <img src="./assets/images/trust3.png" alt="company" class="trust__img">
+            </li>
+            <li class="swiper-slide trust__item">
+              <img src="./assets/images/trust1.png" alt="antarctica" class="trust__img">
+            </li>
+            <li class="swiper-slide trust__item">
+              <img src="./assets/images/trust2.png" alt="circle" class="trust__img">
+            </li>
+            <li class="swiper-slide trust__item">
+              <img src="./assets/images/trust3.png" alt="company" class="trust__img">
+            </li>
+            <li class="swiper-slide trust__item">
+              <img src="./assets/images/trust1.png" alt="antarctica" class="trust__img">
+            </li>
+            <li class="swiper-slide trust__item">
+              <img src="./assets/images/trust2.png" alt="circle" class="trust__img">
+            </li>
+            <li class="swiper-slide trust__item">
+              <img src="./assets/images/trust3.png" alt="company" class="trust__img">
+            </li>
+          </ul>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container contacts__container">
+        <div class="contacts__left">
+          <h2 class="contacts__heading">Контакты</h2>
+          <strong class="contacts__strong">Хотите обсудить сотрудничество или остались вопросы, – позвоните или напишите
+            нам</strong>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__item-descr contacts__tel"><span class="contacts__item-heading">Телефон: </span>+38 044
+                259 91 15</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item-descr contacts__tel"><span class="contacts__item-heading">Мобильный: </span>+38
+                067 111 11 11</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item-descr"><span class="contacts__item-heading">Адрес: </span>Голосеевский проспект,
+                89, Киев, 03127, Украина</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__item-descr"><span class="contacts__item-heading">E-mail: </span>info@tet-audit.com.ua
+              </p>
+            </li>
+          </ul>
+          <ul class="contacts__social-list">
+            <li class="contacts__social-item"><a href="#" class="contacts__social-link btn-social"><svg
+                  class="viber-svg">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#viber"></use>
+                </svg></a></li>
+            <li class="contacts__social-item"><a href="#" class="contacts__social-link btn-social"><svg
+                  class="telegram-svg">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#telegram"></use>
+                </svg></a></li>
+            <li class="contacts__social-item"><a href="#" class="contacts__social-link btn-social"><svg
+                  class="instagram-svg">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#instagram"></use>
+                </svg></a></li>
+            <li class="contacts__social-item"><a href="#" class="contacts__social-link btn-social"><svg class="fb-svg">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#fb"></use>
+                </svg></a></li>
+          </ul>
+          <div id="map" class="contacts__map"></div>
+          <p class="contacts__sending">Подпишитесь на нашу рассылку и получайте новости и извещения о событиях и
+            отраслевые отчеты на свою почту.</p>
+          <button class="contacts__subscribe-sending">E-mail</button>
+        </div>
+        <div class="contacts__wrapper">
+          <div class="contacts__right">
+            <form action="" class="contacts__form">
+              <p class="form__heading">Отправить сообщение</p>
+              <input type="text" class="form__name" name="name" placeholder="Ваше имя" required>
+              <input type="text" class="form__mail" placeholder="E-mail" required>
+              <textarea name="message" id="" cols="30" rows="10" placeholder="Ваше сообщение" required
+                class="form__message"></textarea>
+              <p class="form__notation">Нажимая “Отправить” вы автоматически соглашаетесь с политикой конфиденциальности
+              </p>
+              <button class="form__btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__content">© 2021 Аудиторская Фирма «ТЕТ». Регистрационный номер 23463607. Все права защищены.</p>
+    </div>
+  </footer>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/main.min.js" type="module"></script>
 </body>
 
 </html>

@@ -8,12 +8,12 @@
   }
 }
 
-@include fonts('Inter', url(../fonts/Inter-Light.ttf), 300, swap, normal); // Light
-@include fonts('Inter', url(../fonts/Inter-Regular.ttf), 400, swap, normal); // Regular
-@include fonts('Inter', url(../fonts/Inter-Medium.ttf), 500, swap, normal); // Medium
-@include fonts('Inter', url(../fonts/Inter-Bold.ttf), 700, swap, normal); // Bold
-@include fonts('Inter', url(../fonts/Inter-ExtraBold.ttf), 800, swap, normal); // ExtraBold
+@include fonts('Montserrat', url(../fonts/Montserrat-Regular.ttf), 400, swap, normal); // Regular
+@include fonts('Montserrat', url(../fonts/Montserrat-Medium.ttf), 500, swap, normal); // Medium
+@include fonts('Montserrat', url(../fonts/Montserrat-SemiBold.ttf), 700, swap, normal); // Bold
+@include fonts('Montserrat', url(../fonts/Montserrat-ExtraBold.ttf), 800, swap, normal); // ExtraBold
+@include fonts('Montserrat', url(../fonts/Montserrat-Black.ttf), 800, swap, normal);
 
 body {
-  font-family: 'Inter';
+  font-family: 'Montserrat';
 }

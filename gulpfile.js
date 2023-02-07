@@ -171,12 +171,12 @@ function clean() {
 }
 
 function watchFiles() {
-  gulp.watch([path.watch.html], html)
-  gulp.watch([path.watch.css], css)
-  gulp.watch([path.watch.js], js)
-  gulp.watch([path.watch.images], images)
-  gulp.watch([path.watch.svg], svgSprites)
-  gulp.watch([path.watch.fonts], fonts)
+  gulp.watch([path.watch.html], {usePolling: true}, html)
+  gulp.watch([path.watch.css], {usePolling: true}, css)
+  gulp.watch([path.watch.js], {usePolling: true}, js)
+  gulp.watch([path.watch.images], {usePolling: true}, images)
+  gulp.watch([path.watch.svg], {usePolling: true}, svgSprites)
+  gulp.watch([path.watch.fonts], {usePolling: true}, fonts)
 }
 
 const build = gulp.series(clean, gulp.parallel(html, css, js, images, svgSprites, fonts))

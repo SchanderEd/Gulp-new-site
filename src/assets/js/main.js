@@ -8,6 +8,6 @@ const onClickBurger = () => {
   burgerMenu.classList.toggle('header__burger-menu--active');
 };
 
-burgerBtn.addEventListener('click', onClickBurger);
+//burgerBtn.addEventListener('click', onClickBurger);
 
 

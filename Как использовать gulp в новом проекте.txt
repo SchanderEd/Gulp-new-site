@@ -1,4 +1,0 @@
-Переносится папка src, package.json, gulpfile ну и всякие файлы линтеров и тд
-Не переносятся папка dist итоговая и node_modules
-
-Потом в новом проекте ввести npm i --save-dev или npm i gulp --save-dev

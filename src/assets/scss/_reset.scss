@@ -1,10 +1,4 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
+* {
   box-sizing: border-box;
 }
 
@@ -14,26 +8,15 @@ ul {
   list-style: none;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
 
 button {
   border: 1px solid transparent;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }

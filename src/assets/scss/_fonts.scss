@@ -8,22 +8,12 @@
   }
 }
 
-@include fonts('OpenSans', url(../fonts/OpenSans-Light.ttf), 300, swap, normal); // Light
-@include fonts('OpenSans', url(../fonts/OpenSans-Regular.ttf), 400, swap, normal); // Regular
-@include fonts('OpenSans', url(../fonts/OpenSans-SemiBold.ttf), 600, swap, normal); // SemiBold
-
-@include fonts('OpenSansCondensed', url(../fonts/OpenSans_Condensed-Regular.ttf), 400, swap, normal); // Regular
-
-@include fonts('NunitoItalic', url(../fonts/Nunito-LightItalic.ttf), 300, swap, normal); // LightItalic
-
-@include fonts('Nunito', url(../fonts/Nunito-Regular.ttf), 400, swap, normal); // Regular
-@include fonts('Nunito', url(../fonts/Nunito-Medium.ttf), 500, swap, normal); // Medium
-@include fonts('Nunito', url(../fonts/Nunito-SemiBold.ttf), 600, swap, normal); // SemiBold
+@include fonts('Inter', url(../fonts/Inter-Light.ttf), 300, swap, normal); // Light
+@include fonts('Inter', url(../fonts/Inter-Regular.ttf), 400, swap, normal); // Regular
+@include fonts('Inter', url(../fonts/Inter-Medium.ttf), 500, swap, normal); // Medium
+@include fonts('Inter', url(../fonts/Inter-Bold.ttf), 700, swap, normal); // Bold
+@include fonts('Inter', url(../fonts/Inter-ExtraBold.ttf), 800, swap, normal); // ExtraBold
 
 body {
-  font-family: 'OpenSans', sans-serif;
-}
-
-.nunito-fonts {
-  font-family: 'Nunito';
+  font-family: 'Inter';
 }

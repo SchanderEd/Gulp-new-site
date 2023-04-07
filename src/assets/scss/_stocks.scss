@@ -1,0 +1,87 @@
+.stocks {
+  background-color: $sandBg;
+  padding-top: 6%;
+  padding-bottom: 6%;
+
+  &__heading {
+    margin-bottom: 5%;
+    font-size: 48px;
+  }
+
+  &__heading, &__item-heading, &__descr, &__additional-info {
+    color: $cardColorText;
+  }
+
+  &__item {
+    margin-bottom: 6%;
+  }
+
+  &__item-heading {
+    font-size: 38px;
+    font-weight: 500;
+  }
+
+  &__descr {
+    padding-left: 5%;
+    font-size: 28px;
+    font-weight: 300;
+  }
+
+  &__additional-info {
+    font-size: 32px;
+  }
+}
+
+.discount-svg {
+  width: 60px;
+  height: 60px;
+  margin-right: 23px;
+}
+
+@media (max-width: 768px) {
+  .stocks {
+    &__heading, &__item-heading {
+      font-size: 28px;
+    }
+
+    &__descr {
+      font-size: 20px;
+    }
+
+    &__additional-info {
+      font-size: 26px;
+    }
+  }
+
+  .discount-svg {
+    width: 40px;
+    height: 40px;
+    margin-right: 19px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stocks {
+    &__heading {
+      font-size: 22px;
+    }
+
+    &__item-heading {
+      font-size: 20px;
+    }
+
+    &__descr {
+      font-size: 16px;
+    }
+
+    &__additional-info {
+      font-size: 14px;
+    }
+  }
+
+  .discount-svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 9px;
+  }
+}

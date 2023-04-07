@@ -1,0 +1,134 @@
+.about-us {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  background-color: $sandBg;
+
+  &__container {
+    padding-left: 40px;
+  }
+
+  &__heading-wrapper {
+    display: flex;
+    align-items: center;
+    height: 69px;
+    margin-bottom: 37px;
+  }
+
+  &__heading {
+    font-size: 40px;
+    font-weight: 600;
+    color: $aboutUsHeading;
+  }
+
+  &__relax, &__seas {
+    padding-left: 0;
+  }
+}
+
+.services-list {
+  min-width: 723px;
+}
+
+.services-item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  display: flex;
+  width: 100%;
+  font-size: 28px;
+}
+
+.services-item:not(:last-child) {
+  margin-bottom: 68px;
+}
+
+.services-descr {
+  padding-left: 20px;
+  color: $servicesColor;
+}
+
+.logo {
+  margin-right: 23px;
+}
+
+.logo-relax {
+  width: 129px;
+  height: 49px;
+}
+
+.logo-seas {
+  width: 107px;
+  height: 49px;
+}
+
+@media (max-width: 1690px) {
+  .services-list {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-us {
+    &__seas {
+      padding-left: 0;
+    }
+
+    &__relax {
+      margin-bottom: 86px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us {
+    &__heading {
+      font-size: 28px;
+    }
+  }
+
+  .services-item {
+    font-size: 18px;
+  }
+
+  .services-item:not(:last-child) {
+    margin-bottom: 38px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-us {
+    &__heading {
+      font-size: 22px;
+    }
+  }
+
+  .services-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .services-descr {
+    padding-left: 35px;
+    font-size: 16px;
+  }
+
+  .star-svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.star-svg-seas {
+  fill: $cardColorText;
+}
+
+.about-us__seas-color {
+  color: $cardColorText;
+}
+
+@media (max-width: 425px) {
+  .about-us {
+    &__relax {
+      margin-bottom: 40px;
+    }
+  }
+}

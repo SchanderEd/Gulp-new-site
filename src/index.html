@@ -1,26 +1,1181 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Сауны Relax и 5 Морей</title>
   <link rel="stylesheet" href="./assets/css/normalize.min.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
+
 <body>
+  <!-- Хай-тек -->
+  <div class="modal fade" id="modal-hitech" aria-hidden="true" aria-labelledby="modal-hitechLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal__header">
+          <img src="./assets/images/relax-logo.png" alt="Relax logo" class="logo-relax">
+          <h3 class="modal-title fs-5" id="modal-hitechLabel">Зал «Хай-Тек»</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Slider main container -->
+          <div class="swiper swiper__hall-photos">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/hitech/face.jpg" alt="">
+              </div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/hitech/2.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/hitech/3.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/hitech/4.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/hitech/5.jpg" alt=""></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/hitech/6.jpg" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev photo-prev"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-left-photo"></use>
+              </svg></div>
+            <div class="swiper-button-next photo-next"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right-photo"></use>
+              </svg></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Готика -->
+  <div class="modal fade" id="modal-gothic" aria-hidden="true" aria-labelledby="modal-gothicLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal__header">
+          <img src="./assets/images/relax-logo.png" alt="Relax logo" class="logo-relax">
+          <h3 class="modal-title fs-5" id="modal-gothicLabel">Зал «Готика»</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Slider main container -->
+          <div class="swiper swiper__hall-photos">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/gothic/face.jpg"
+                  alt="Готика"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/gothic/2.jpg" alt="Готика">
+              </div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/gothic/3.jpg" alt="Готика">
+              </div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/gothic/4.jpg" alt="Готика">
+              </div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/gothic/5.jpg" alt="Готика">
+              </div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/gothic/6.jpg" alt="Готика">
+              </div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/gothic/7.jpg" alt="Готика">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev photo-prev"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-left-photo"></use>
+              </svg></div>
+            <div class="swiper-button-next photo-next"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right-photo"></use>
+              </svg></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Восточный -->
+  <div class="modal fade" id="modal-east" aria-hidden="true" aria-labelledby="modal-eastLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal__header">
+          <img src="./assets/images/relax-logo.png" alt="Relax logo" class="logo-relax">
+          <h3 class="modal-title fs-5" id="modal-eastLabel">Зал «Восточный»</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Slider main container -->
+          <div class="swiper swiper__hall-photos">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/east/face.jpg"
+                  alt="Восточный зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/east/2.jpg"
+                  alt="Восточный зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/east/3.jpg"
+                  alt="Восточный зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/east/4.jpg"
+                  alt="Восточный зал"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev photo-prev"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-left-photo"></use>
+              </svg></div>
+            <div class="swiper-button-next photo-next"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right-photo"></use>
+              </svg></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Японский -->
+  <div class="modal fade" id="modal-japan" aria-hidden="true" aria-labelledby="modal-japanLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal__header">
+          <img src="./assets/images/relax-logo.png" alt="Relax logo" class="logo-relax">
+          <h3 class="modal-title fs-5" id="modal-japanLabel">Зал «Японский»</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Slider main container -->
+          <div class="swiper swiper__hall-photos">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/japan/face.jpg"
+                  alt="Японский зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/japan/2.jpg"
+                  alt="Японский зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/japan/3.jpg"
+                  alt="Японский зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/japan/4.jpg"
+                  alt="Японский зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/relax/japan/5.jpg"
+                  alt="Японский зал"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev photo-prev"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-left-photo"></use>
+              </svg></div>
+            <div class="swiper-button-next photo-next"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right-photo"></use>
+              </svg></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Люкс -->
+  <div class="modal fade" id="modal-lux" aria-hidden="true" aria-labelledby="modal-luxLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal__header">
+          <img src="./assets/images/seas-logo.png" alt="Seas logo" class="logo-seas">
+          <h3 class="modal-title fs-5" id="modal-luxLabel">Зал «Люкс»</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Slider main container -->
+          <div class="swiper swiper__hall-photos">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/lux/face.jpg" alt="Зал люкс">
+              </div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/lux/2.jpg" alt="Зал люкс">
+              </div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/lux/3.jpg" alt="Зал люкс">
+              </div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/lux/4.jpg" alt="Зал люкс">
+              </div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/lux/5.jpg" alt="Зал люкс">
+              </div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/lux/6.jpg" alt="Зал люкс">
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev photo-prev"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-left-photo"></use>
+              </svg></div>
+            <div class="swiper-button-next photo-next"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right-photo"></use>
+              </svg></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Индийский -->
+  <div class="modal fade" id="modal-indian" aria-hidden="true" aria-labelledby="modal-indianLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal__header">
+          <img src="./assets/images/seas-logo.png" alt="Seas logo" class="logo-seas">
+          <h3 class="modal-title fs-5" id="modal-indianLabel">Зал «Индийский»</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Slider main container -->
+          <div class="swiper swiper__hall-photos">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/indian/face.jpg"
+                  alt="Индийский зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/indian/2.jpg"
+                  alt="Индийский зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/indian/3.jpg"
+                  alt="Индийский зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/indian/4.jpg"
+                  alt="Индийский зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/indian/5.jpg"
+                  alt="Индийский зал"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev photo-prev"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-left-photo"></use>
+              </svg></div>
+            <div class="swiper-button-next photo-next"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right-photo"></use>
+              </svg></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Юрский -->
+  <div class="modal fade" id="modal-period" aria-hidden="true" aria-labelledby="modal-periodLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal__header">
+          <img src="./assets/images/seas-logo.png" alt="Seas logo" class="logo-seas">
+          <h3 class="modal-title fs-5" id="modal-periodLabel">Зал «Парк юрского периода»</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Slider main container -->
+          <div class="swiper swiper__hall-photos">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/period/face.jpg"
+                  alt="Юрский период"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/period/2.jpg"
+                  alt="Юрский период"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/period/3.jpg"
+                  alt="Юрский период"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/period/4.jpg"
+                  alt="Юрский период"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/period/5.jpg"
+                  alt="Юрский период"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/period/6.jpg"
+                  alt="Юрский период"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/period/7.jpg"
+                  alt="Юрский период"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev photo-prev"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-left-photo"></use>
+              </svg></div>
+            <div class="swiper-button-next photo-next"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right-photo"></use>
+              </svg></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Русский -->
+  <div class="modal fade" id="modal-russian" aria-hidden="true" aria-labelledby="modal-russianLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal__header">
+          <img src="./assets/images/seas-logo.png" alt="Seas logo" class="logo-seas">
+          <h3 class="modal-title fs-5" id="modal-russianLabel">Зал «Русский стиль»</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Slider main container -->
+          <div class="swiper swiper__hall-photos">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/russian/face.jpg"
+                  alt="Русский зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/russian/2.jpg"
+                  alt="Русский зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/russian/3.jpg"
+                  alt="Русский зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/russian/4.jpg"
+                  alt="Русский зал"></div>
+              <div class="swiper-slide"><img class="hall-photo" src="./assets/images/seas/russian/5.jpg"
+                  alt="Русский зал"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev photo-prev"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-left-photo"></use>
+              </svg></div>
+            <div class="swiper-button-next photo-next"><svg class="photo-btn-swiper">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right-photo"></use>
+              </svg></div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="wrapper">
     <header class="header">
-
+      <div class="container header__container">
+        <div class="row">
+          <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid">
+              <div class="navbar-brand">
+                <h2 class="header__heading nunito-fonts">САУНА «5 МОРЕЙ»</h2>
+                <h2 class="header__heading nunito-fonts">САУНА «RELAX»</h2>
+              </div>
+              <div class="header__wrapper-btns-nav">
+                <div class="header__inner-btns-nav">
+                  <a type="button" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </a>
+                  <div class="navbar-links-wrapper">
+                    <a class="header__tel-link tel nunito-fonts pb-3"><svg class="call-svg">
+                        <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#call"></use>
+                      </svg>8-912-30-90-444</a>
+                    <a class="header__tel-link tel nunito-fonts"><svg class="call-svg">
+                        <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#call"></use>
+                      </svg>8-999-587-88-70</a>
+                  </div>
+                </div>
+              </div>
+              <div class="offcanvas-body offcanvas offcanvas-end" id="navbarSupportedContent">
+                <button type="button" class="btn-close header__btn-close" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+                <ul class="navbar-nav me-auto mb-4 pb-3 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about-us">О НАС</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#halls">САУНЫ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#stocks">АКЦИИ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contacts">КОНТАКТЫ</a>
+                  </li>
+                  <li class="tels-wrapper">
+                    <p class="header__tel-link tel-link-heading">«5 Морей»:</p>
+                    <a class="header__tel-link nunito-fonts pb-3"><svg class="call-svg">
+                        <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#call"></use>
+                      </svg>8-912-30-90-444</a>
+                    <p class="header__tel-link tel-link-heading">«Relax»:</p>
+                    <a class="header__tel-link nunito-fonts"><svg class="call-svg">
+                        <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#call"></use>
+                      </svg>8-999-587-88-70</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
     </header>
     <main class="main">
+      <section class="hero">
+        <div class="video-size">
+          <video class="video" preload="auto" autoplay loop muted>
+            <source src="./assets/videos/Aimages - video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="container hero__container">
+          <h2 class="hero__heading nunito-fonts">Мы можем быть именно тем местом, которое вы ищете</h2>
+        </div>
+      </section>
+      <section class="about-us" id="about-us">
+        <div class="container about-us__container">
+          <div class="row">
+            <div class="about-us__relax col-lg-6">
+              <div class="about-us__heading-wrapper">
+                <img src="./assets/images/relax-logo.png" alt="Relax logo" class="logo logo-relax">
+                <h2 class="about-us__heading nunito-fonts">САУНА «RELAX»</h2>
+              </div>
+              <div class="about-us__list-wrapper">
+                <ul class="about-us__relax-services-list services-list">
+                  <li class="about-us__relax-services-item services-item">
+                    <svg class="star-svg">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#star"></use>
+                    </svg>
+                    <p class="about-us__relax-services-descr services-descr">
+                      Качественное и добродушное обслуживание
+                    </p>
+                  </li>
+                  <li class="about-us__relax-services-item services-item">
+                    <svg class="star-svg">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#star"></use>
+                    </svg>
+                    <p class="about-us__relax-services-descr services-descr">
+                      Уникальные дизайны залов на разный вкус
+                    </p>
+                  </li>
+                  <li class="about-us__relax-services-item services-item">
+                    <svg class="star-svg">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#star"></use>
+                    </svg>
+                    <p class="about-us__relax-services-descr services-descr">
+                      Финская и турецкая парная
+                    </p>
+                  </li>
+                  <li class="about-us__relax-services-item services-item">
+                    <svg class="star-svg">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#star"></use>
+                    </svg>
+                    <p class="about-us__relax-services-descr services-descr">
+                      Просторные бассейны
+                    </p>
+                  </li>
+                  <li class="about-us__relax-services-item services-item">
+                    <svg class="star-svg">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#star"></use>
+                    </svg>
+                    <p class="about-us__relax-services-descr services-descr">
+                      Тёплое джакузи
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="about-us__seas col-lg-6">
+              <div class="about-us__heading-wrapper">
+                <img src="./assets/images/seas-logo.png" alt="Seas logo" class="logo logo-seas">
+                <h2 class="about-us__heading nunito-fonts about-us__seas-color">САУНА «5 МОРЕЙ»</h2>
+              </div>
+              <div class="about-us__list-wrapper">
+                <ul class="about-us__seas-services-list services-list">
+                  <li class="about-us__seas-services-item services-item">
+                    <svg class="star-svg star-svg-seas">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#star"></use>
+                    </svg>
+                    <p class="about-us__seas-services-descr services-descr about-us__seas-color">
+                      Гарантирует вам отличное времяпровождение
+                    </p>
+                  </li>
+                  <li class="about-us__seas-services-item services-item">
+                    <svg class="star-svg star-svg-seas">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#star"></use>
+                    </svg>
+                    <p class="about-us__seas-services-descr services-descr about-us__seas-color">
+                      Удивительные впечатления и воспоминания
+                    </p>
+                  </li>
+                  <li class="about-us__seas-services-item services-item">
+                    <svg class="star-svg star-svg-seas">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#star"></use>
+                    </svg>
+                    <p class="about-us__seas-services-descr services-descr about-us__seas-color">
+                      Шашлык в любое время и погоду
+                    </p>
+                  </li>
+                  <li class="about-us__seas-services-item services-item">
+                    <svg class="star-svg star-svg-seas">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#star"></use>
+                    </svg>
+                    <p class="about-us__seas-services-descr services-descr about-us__seas-color">
+                      Несколько залов на ваш выбор
+                    </p>
+                  </li>
+                  <li class="about-us__seas-services-item services-item">
+                    <svg class="star-svg star-svg-seas">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#star"></use>
+                    </svg>
+                    <p class="about-us__seas-services-descr services-descr about-us__seas-color">
+                      Залы для больших компаний
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="halls" id="halls">
+        <div class="container">
+          <div class="row halls__top">
+            <h2 class="halls__heading col-lg-3 nunito-fonts heading-section">Наши залы</h2>
+            <ul class="nav nav-tabs col-lg-9 halls__btns" id="myTab" role="tablist">
+              <li class="item-tabs-btn" role="presentation">
+                <button class="halls__sauna-btn nav-link active nunito-fonts col-6" id="relax-tab" data-bs-toggle="tab"
+                  data-bs-target="#relax-tab-pane" type="button" role="tab" aria-controls="relax-tab-pane"
+                  aria-selected="true">САУНА «RELAX»</button>
+              </li>
+              <li class="item-tabs-btn" role="presentation">
+                <button class="halls__sauna-btn nav-link nunito-fonts col-6" id="seas-tab" data-bs-toggle="tab"
+                  data-bs-target="#seas-tab-pane" type="button" role="tab" aria-controls="seas-tab-pane"
+                  aria-selected="false">САУНА «5 МОРЕЙ»</button>
+              </li>
+            </ul>
+          </div>
+          <div class="row halls__middle">
+            <div class="tab-content halls__hall-tab-content" id="myTabContent">
 
+              <!-- ТАБ РЕЛАКСА -->
+              <div class="tab-pane fade show active halls__hall-tab" id="relax-tab-pane" role="tabpanel"
+                aria-labelledby="relax-tab" tabindex="0">
+                <div class="swiper halls__swiper-halls swiper-relax">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide halls__hitech-slide halls__hall-card">
+                      <div class="row halls__hall-card-row">
+                        <div class="halls__hall-card-left col-lg-6 col-md-4">
+                          <h3 class="halls__hall-heading">Зал «Хай-Тек»</h3>
+                          <ul class="halls__hall-services-list">
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Бассейн 5x3,5м</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Джакузи с гидромассажем</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Водопад</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Финская сауна</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Русский бильярд</p>
+                            </li>
+                          </ul>
+                          <p class="halls__hall-capacity"><svg class="people-svg">
+                              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#people"></use>
+                            </svg> <span class="capacity">Вместимость: </span>10 человек</p>
+                        </div>
+                        <div class="halls__hall-card-right col-lg-6 col-md-8">
+                          <svg class="zoom-svg" data-bs-target="#modal-hitech" data-bs-toggle="modal">
+                            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#zoom"></use>
+                          </svg>
+                          <img src="./assets/images/relax/hitech/face.jpg" alt="" class="halls__hall-photo"
+                            data-bs-target="#modal-hitech" data-bs-toggle="modal">
+                        </div>
+                        <div class="row halls__hall-card-bottom-row">
+                          <div class="halls__hall-price-block col-lg-6 col-md-12">
+                            <p class="halls__hall-price"><svg class="card-svg">
+                                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#card"></use>
+                              </svg> <span class="cost">Цена: </span></p>
+                            <div class="halls__price-value-block">
+                              <p class="halls__hall-price-value price-day">1500 руб/час 9:00 — 16:00</p>
+                              <p class="halls__hall-price-value">1700 руб/час 16:00 — 9:00</p>
+                            </div>
+                          </div>
+                          <p class="halls__hall-additional-info col-lg-6 col-md-12">Дополнительные посетители до 4 часов
+                            бронирования
+                            100 ₽ с человека за каждый час.
+                            Свыше 4 часов бронирования 400 ₽ с человека за все время отдыха.
+                            Дополнительные простыни 50 ₽</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Слайд готика -->
+                    <div class="swiper-slide halls__gothic-slide halls__hall-card">
+                      <div class="row halls__hall-card-row">
+                        <div class="halls__hall-card-left col-lg-6 col-md-4">
+                          <h3 class="halls__hall-heading">Зал «Готика»</h3>
+                          <ul class="halls__hall-services-list">
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Бассейн 6x4м</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Искусственная волна</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Джакузи с гидромассажем</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Финская сауна</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Турецкая парная</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Русский бильярд</p>
+                            </li>
+                          </ul>
+                          <p class="halls__hall-capacity"><svg class="people-svg">
+                              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#people"></use>
+                            </svg> <span class="capacity">Вместимость: </span>12 человек</p>
+                        </div>
+                        <div class="halls__hall-card-right col-lg-6 col-md-8">
+                          <svg class="zoom-svg" data-bs-target="#modal-gothic" data-bs-toggle="modal">
+                            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#zoom"></use>
+                          </svg>
+                          <img src="./assets/images/relax/gothic/face.jpg" alt="" class="halls__hall-photo"
+                            data-bs-target="#modal-gothic" data-bs-toggle="modal">
+                        </div>
+                        <div class="row halls__hall-card-bottom-row">
+                          <div class="halls__hall-price-block col-lg-6 col-md-12">
+                            <p class="halls__hall-price"><svg class="card-svg">
+                                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#card"></use>
+                              </svg> <span class="cost">Цена: </span></p>
+                            <div class="halls__price-value-block">
+                              <p class="halls__hall-price-value price-day">1650 руб/час 9:00 — 16:00</p>
+                              <p class="halls__hall-price-value">2000 руб/час 16:00 — 9:00</p>
+                            </div>
+                          </div>
+                          <p class="halls__hall-additional-info col-lg-6 col-md-12">Дополнительные посетители до 4 часов
+                            бронирования
+                            100 ₽ с человека за каждый час.
+                            Свыше 4 часов бронирования 400 ₽ с человека за все время отдыха.
+                            Дополнительные простыни 50 ₽</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Слайд восточный -->
+                    <div class="swiper-slide halls__east-slide halls__hall-card">
+                      <div class="row halls__hall-card-row">
+                        <div class="halls__hall-card-left col-lg-6 col-md-4">
+                          <h3 class="halls__hall-heading">Зал «Восточный»</h3>
+                          <ul class="halls__hall-services-list">
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Бассейн 3,5x3,5м</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Водопад</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Финская сауна</p>
+                            </li>
+                          </ul>
+                          <p class="halls__hall-capacity"><svg class="people-svg">
+                              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#people"></use>
+                            </svg> <span class="capacity">Вместимость: </span>6 человек</p>
+                        </div>
+                        <div class="halls__hall-card-right col-lg-6 col-md-8">
+                          <svg class="zoom-svg" data-bs-target="#modal-east" data-bs-toggle="modal">
+                            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#zoom"></use>
+                          </svg>
+                          <img src="./assets/images/relax/east/face.jpg" alt="" class="halls__hall-photo"
+                            data-bs-target="#modal-east" data-bs-toggle="modal">
+                        </div>
+                        <div class="row halls__hall-card-bottom-row">
+                          <div class="halls__hall-price-block col-lg-6 col-md-12">
+                            <p class="halls__hall-price"><svg class="card-svg">
+                                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#card"></use>
+                              </svg> <span class="cost">Цена: </span></p>
+                            <div class="halls__price-value-block">
+                              <p class="halls__hall-price-value price-day">1000 руб/ час в любое время</p>
+                              <p class="halls__hall-price-value"></p>
+                            </div>
+                          </div>
+                          <p class="halls__hall-additional-info col-lg-6 col-md-12">Дополнительные посетители до 4 часов
+                            бронирования
+                            100 ₽ с человека за каждый час.
+                            Свыше 4 часов бронирования 400 ₽ с человека за все время отдыха.
+                            Дополнительные простыни 50 ₽</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide halls__japan-slide halls__hall-card">
+                      <div class="row halls__hall-card-row">
+                        <div class="halls__hall-card-left col-lg-6 col-md-4">
+                          <h3 class="halls__hall-heading">Зал «Японский»</h3>
+                          <ul class="halls__hall-services-list">
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Бассейн 6x4м</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Искусственная волна</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Джакузи с гидромассажем</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Финская сауна</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Русский бильярд</p>
+                            </li>
+                          </ul>
+                          <p class="halls__hall-capacity"><svg class="people-svg">
+                              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#people"></use>
+                            </svg> <span class="capacity">Вместимость: </span>10 человек</p>
+                        </div>
+                        <div class="halls__hall-card-right col-lg-6 col-md-8">
+                          <svg class="zoom-svg" data-bs-target="#modal-japan" data-bs-toggle="modal">
+                            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#zoom"></use>
+                          </svg>
+                          <img src="./assets/images/relax/japan/face.jpg" alt="" class="halls__hall-photo"
+                            data-bs-target="#modal-japan" data-bs-toggle="modal">
+                        </div>
+                        <div class="row halls__hall-card-bottom-row">
+                          <div class="halls__hall-price-block col-lg-6 col-md-12">
+                            <p class="halls__hall-price"><svg class="card-svg">
+                                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#card"></use>
+                              </svg> <span class="cost">Цена: </span></p>
+                            <div class="halls__price-value-block">
+                              <p class="halls__hall-price-value price-day">1600 руб/час 9:00 — 16:00</p>
+                              <p class="halls__hall-price-value">1800 руб/час 16:00 — 9:00</p>
+                            </div>
+                          </div>
+                          <p class="halls__hall-additional-info col-lg-6 col-md-12">Дополнительные посетители до 4 часов
+                            бронирования
+                            100 ₽ с человека за каждый час.
+                            Свыше 4 часов бронирования 400 ₽ с человека за все время отдыха.
+                            Дополнительные простыни 50 ₽</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="halls__swiper-btns-block">
+                  <div class="swiper-button-prev swiper-relax-btn-prev sauna-swiper-btn"><svg class="arrow-left">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-left"></use>
+                    </svg></div>
+                  <div class="swiper-button-next swiper-relax-btn-next sauna-swiper-btn"><svg class="arrow-right">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right"></use>
+                    </svg></div>
+                </div>
+              </div>
+
+              <!-- ТАБ МОРЕЙ -->
+              <div class="tab-pane fade" id="seas-tab-pane" role="tabpanel" aria-labelledby="seas-tab" tabindex="0">
+                <!-- Slider main container -->
+                <div class="swiper halls__swiper-halls swiper-seas">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Слайд люкс -->
+                    <div class="swiper-slide halls__lux-slide halls__hall-card">
+                      <div class="row halls__hall-card-row">
+                        <div class="halls__hall-card-left col-lg-6 col-md-4">
+                          <h3 class="halls__hall-heading">Зал «Люкс»</h3>
+                          <ul class="halls__hall-services-list">
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Бассейн 6x4м</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Искусственная волна</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Финская сауна</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Русский бильярд</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Комната с мангалом (450 р/час)</p>
+                            </li>
+                          </ul>
+                          <p class="halls__hall-capacity"><svg class="people-svg">
+                              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#people"></use>
+                            </svg> <span class="capacity">Вместимость: </span>12 человек</p>
+                        </div>
+                        <div class="halls__hall-card-right col-lg-6 col-md-8">
+                          <svg class="zoom-svg" data-bs-target="#modal-lux" data-bs-toggle="modal">
+                            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#zoom"></use>
+                          </svg>
+                          <img src="./assets/images/seas/lux/face.jpg" alt="" class="halls__hall-photo"
+                            data-bs-target="#modal-lux" data-bs-toggle="modal">
+                        </div>
+                        <div class="row halls__hall-card-bottom-row">
+                          <div class="halls__hall-price-block col-lg-6">
+                            <p class="halls__hall-price"><svg class="card-svg">
+                                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#card"></use>
+                              </svg> <span class="cost">Цена: </span></p>
+                            <div class="halls__price-value-block">
+                              <p class="halls__hall-price-value price-day">1600 руб/час 9:00 — 16:00</p>
+                              <p class="halls__hall-price-value">1850 руб/час 16:00 — 9:00</p>
+                            </div>
+                          </div>
+                          <p class="halls__hall-additional-info col-lg-6">Дополнительные посетители до 4 часов
+                            бронирования
+                            100 ₽ с человека за каждый час.
+                            Свыше 4 часов бронирования 400 ₽ с человека за все время отдыха.
+                            Дополнительные простыни 50 ₽</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Слайд индиский -->
+                    <div class="swiper-slide halls__indian-slide halls__hall-card">
+                      <div class="row halls__hall-card-row">
+                        <div class="halls__hall-card-left col-lg-6 col-md-4">
+                          <h3 class="halls__hall-heading">Зал «Индийский»</h3>
+                          <ul class="halls__hall-services-list">
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Бассейн 5x3м</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Джакузи</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Финская сауна</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Минифутбол</p>
+                            </li>
+                          </ul>
+                          <p class="halls__hall-capacity"><svg class="people-svg">
+                              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#people"></use>
+                            </svg> <span class="capacity">Вместимость: </span>10 человек</p>
+                        </div>
+                        <div class="halls__hall-card-right col-lg-6 col-md-8">
+                          <svg class="zoom-svg" data-bs-target="#modal-indian" data-bs-toggle="modal">
+                            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#zoom"></use>
+                          </svg>
+                          <img src="./assets/images/seas/indian/face.jpg" alt="" class="halls__hall-photo"
+                            data-bs-target="#modal-indian" data-bs-toggle="modal">
+                        </div>
+                        <div class="row halls__hall-card-bottom-row">
+                          <div class="halls__hall-price-block col-lg-6">
+                            <p class="halls__hall-price"><svg class="card-svg">
+                                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#card"></use>
+                              </svg> <span class="cost">Цена: </span></p>
+                            <div class="halls__price-value-block">
+                              <p class="halls__hall-price-value price-day">1400 руб/час 9:00 — 16:00</p>
+                              <p class="halls__hall-price-value">1650 руб/час 16:00 — 9:00</p>
+                            </div>
+                          </div>
+                          <p class="halls__hall-additional-info col-lg-6">Дополнительные посетители до 4 часов
+                            бронирования
+                            100 ₽ с человека за каждый час.
+                            Свыше 4 часов бронирования 400 ₽ с человека за все время отдыха.
+                            Дополнительные простыни 50 ₽</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Слайд период -->
+                    <div class="swiper-slide halls__period-slide halls__hall-card">
+                      <div class="row halls__hall-card-row">
+                        <div class="halls__hall-card-left col-lg-6 col-md-4">
+                          <h3 class="halls__hall-heading">Зал  «Парк юрского периода»</h3>
+                          <ul class="halls__hall-services-list">
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Бассейн 6x4м</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Водопад</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Джакузи с гидромассажем</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Финская сауна</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Турецкая парная</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Русский бильярд</p>
+                            </li>
+                          </ul>
+                          <p class="halls__hall-capacity"><svg class="people-svg">
+                              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#people"></use>
+                            </svg> <span class="capacity">Вместимость: </span>12 человек</p>
+                        </div>
+                        <div class="halls__hall-card-right col-lg-6 col-md-8">
+                          <svg class="zoom-svg" data-bs-target="#modal-period" data-bs-toggle="modal">
+                            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#zoom"></use>
+                          </svg>
+                          <img src="./assets/images/seas/period/face.jpg" alt="Юрский период" class="halls__hall-photo"
+                            data-bs-target="#modal-period" data-bs-toggle="modal">
+                        </div>
+                        <div class="row halls__hall-card-bottom-row">
+                          <div class="halls__hall-price-block col-lg-6">
+                            <p class="halls__hall-price"><svg class="card-svg">
+                                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#card"></use>
+                              </svg> <span class="cost">Цена: </span></p>
+                            <div class="halls__price-value-block">
+                              <p class="halls__hall-price-value price-day">1650 руб/час 9:00 — 16:00</p>
+                              <p class="halls__hall-price-value">2220 руб/час 16:00 — 9:00</p>
+                            </div>
+                          </div>
+                          <p class="halls__hall-additional-info col-lg-6">Дополнительные посетители до 4 часов
+                            бронирования
+                            100 ₽ с человека за каждый час.
+                            Свыше 4 часов бронирования 400 ₽ с человека за все время отдыха.
+                            Дополнительные простыни 50 ₽</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Слайд русский -->
+                    <div class="swiper-slide halls__russian-slide halls__hall-card">
+                      <div class="row halls__hall-card-row">
+                        <div class="halls__hall-card-left col-lg-6 col-md-4">
+                          <h3 class="halls__hall-heading">Зал «Русский стиль»</h3>
+                          <ul class="halls__hall-services-list">
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Бассейн 6x3м</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Аэромасс</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Фитобочка</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Финская сауна</p>
+                            </li>
+                            <li class="halls__hall-services-item">
+                              <p class="halls__hall-services-descr">Американский бильярд</p>
+                            </li>
+                          </ul>
+                          <p class="halls__hall-capacity"><svg class="people-svg">
+                              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#people"></use>
+                            </svg> <span class="capacity">Вместимость: </span>8 человек</p>
+                        </div>
+                        <div class="halls__hall-card-right col-lg-6 col-md-8">
+                          <svg class="zoom-svg" data-bs-target="#modal-russian" data-bs-toggle="modal">
+                            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#zoom"></use>
+                          </svg>
+                          <img src="./assets/images/seas/russian/face.jpg" alt="Русский" class="halls__hall-photo"
+                            data-bs-target="#modal-russian" data-bs-toggle="modal">
+                        </div>
+                        <div class="row halls__hall-card-bottom-row">
+                          <div class="halls__hall-price-block col-lg-6">
+                            <p class="halls__hall-price"><svg class="card-svg">
+                                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#card"></use>
+                              </svg> <span class="cost">Цена: </span></p>
+                            <div class="halls__price-value-block">
+                              <p class="halls__hall-price-value price-day">1200 руб/час 9:00 — 16:00</p>
+                              <p class="halls__hall-price-value">1450 руб/час 16:00 — 9:00</p>
+                            </div>
+                          </div>
+                          <p class="halls__hall-additional-info col-lg-6">Дополнительные посетители до 4 часов
+                            бронирования
+                            100 ₽ с человека за каждый час.
+                            Свыше 4 часов бронирования 400 ₽ с человека за все время отдыха.
+                            Дополнительные простыни 50 ₽</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="halls__swiper-btns-block">
+                  <div class="swiper-button-prev swiper-seas-btn-prev sauna-swiper-btn"><svg class="arrow-left">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-left"></use>
+                    </svg></div>
+                  <div class="swiper-button-next swiper-seas-btn-next sauna-swiper-btn"><svg class="arrow-right">
+                      <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#arrow-right"></use>
+                    </svg></div>
+                </div>
+              </div>
+            </div>
+            <p class="halls__hall-additional-info additional-info-mb">Дополнительные посетители до 4 часов
+              бронирования
+              100 ₽ с человека за каждый час.
+              Свыше 4 часов бронирования 400 ₽ с человека за все время отдыха.
+              Дополнительные простыни 50 ₽</p>
+          </div>
+        </div>
+      </section>
+      <section class="pay">
+        <div class="container">
+          <h2 class="pay__heading nunito-fonts heading-section">Вопрос-ответ</h2>
+          <div class="pay__accordion-wrapper">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Как забронировать?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p class="pay__descr">
+                      Для бронирования зала свяжитесь с администратором и уточните наличие свободного времени в нужную
+                      вам
+                      дату.
+                    </p>
+                    <div class="pay__phone-block">
+                      <p class="pay__phone-heading">Сауна «Relax»:<a href="#" class="pay__relax-link pay__link"> <svg
+                            class="pay__call-svg">
+                            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#call"></use>
+                          </svg> 8-912-328-11-20</a></p>
+                      <p class="pay__phone-heading">Сауна «5 Морей»:<a href="#" class="pay__seas-link pay__link"> <svg
+                            class="pay__call-svg">
+                            <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#call"></use>
+                          </svg> 8-912-30-90-444</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Как оплатить зал в «Relax»?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body pay__acrr-descr">
+                    <div class="pay__accordion-descr-block">
+                      <img src="./assets/images/relaxPay.png" alt="СПБ Relax" class="pay__img">
+                    </div>
+                    <div class="pay__accordion-divider">
+                      <h3 class="pay__accordion-body-heading"><span class="pay__qr pay-symbols">&#129040;</span> Сканировать QR-код</h3>
+                      <h3 class="pay__accordion-body-heading pay__sbp">Перейти по ссылке <span class="pay__sbp pay-symbols">&#129042;</span></h3>
+                    </div>
+                    <div class="pay__accordion-descr-block">
+                      <a href="https://qr.nspk.ru/AS1A002PE2O3S6E68E6R1ISSL2ST1LK7?type=01&bank=100000000106&crc=14E7"
+                        class="pay__relax-link-payment link-payment" target="_blank">Оплатить по СБП</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Как оплатить зал в «5 Морей»?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body pay__acrr-descr">
+                    <div class="pay__accordion-descr-block">
+                      <img src="../assets/images/seasPay.png" alt="СПБ 5 Морей" class="pay__img">
+                    </div>
+                    <div class="pay__accordion-divider">
+                      <h3 class="pay__accordion-body-heading"><span class="pay__qr pay-symbols">&#129040;</span> Сканировать QR-код</h3>
+                      <h3 class="pay__accordion-body-heading pay__sbp">Перейти по ссылке <span class="pay__sbp pay-symbols">&#129042;</span></h3>
+                    </div>
+                    <div class="pay__accordion-descr-block">
+                      <a href="https://qr.nspk.ru/AS1A005I1HHF2J748Q5A850A83PSS1AM?type=01&bank=100000000106&crc=C63F"
+                        class="pay__relax-link-payment link-payment" target="_blank">Оплатить по СБП</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="stocks" id="stocks">
+        <div class="container">
+          <h2 class="stocks__heading nunito-fonts heading-section">АКЦИИ И СКИДКИ</h2>
+          <ul class="stocks__list">
+            <li class="stocks__item">
+              <h4 class="stocks__item-heading nunito-fonts"><svg class="discount-svg">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#discount"></use>
+                </svg> Скидка именниникам 5%</h4>
+              <p class="stocks__descr">Акция действует на все залы «5 морей» и «Relax» при покупке от 2 часов.</p>
+            </li>
+            <li class="stocks__item">
+              <h4 class="stocks__item-heading nunito-fonts"><svg class="discount-svg">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#discount"></use>
+                </svg>3+1</h4>
+              <p class="stocks__descr">Купи 3 часа и получи 1 час в подарок. Акция действует на все залы «5 морей»
+                и «Relax»с понедельника по четверг и в пятницу до 16:00.</p>
+            </li>
+            <li class="stocks__item">
+              <h4 class="stocks__item-heading nunito-fonts"><svg class="discount-svg">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#discount"></use>
+                </svg> Летнее предложение</h4>
+              <p class="stocks__descr">С 21 мая по 15 сентября купи 3 часа и получи один час в подарок. Акция действует
+                в
+                любой день недели.</p>
+            </li>
+            <li class="stocks__item">
+              <h4 class="stocks__item-heading nunito-fonts"><svg class="discount-svg">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#discount"></use>
+                </svg> Подарочный сертификат</h4>
+              <p class="stocks__descr">Купи 3 часа и получи 1 час в подарок. Акция действует на все залы «5 морей»
+                и «Relax» с понедельника по четверг и в пятницу до 16:00.</p>
+            </li>
+            <li class="stocks__item">
+              <h4 class="stocks__item-heading nunito-fonts"><svg class="discount-svg">
+                  <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#discount"></use>
+                </svg> Индивидуальный подход</h4>
+              <p class="stocks__descr">Индивидуальный подход к каждому бронированию по дополнительным посетителям.</p>
+            </li>
+          </ul>
+          <p class="stocks__additional-info">*Акции не действуют в выходные и праздничные дни.</p>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-
+    <footer class="footer" id="contacts">
+      <div class="container">
+        <div class="row footer__row-top">
+          <h2 class="footer__heading nunito-fonts col-lg-4 heading-section">КОНТАКТЫ</h2>
+          <div class="footer__sauna-info col-lg-4">
+            <h3 class="footer__sauna-info-heading nunito-fonts">САУНА «RELAX»</h3>
+            <p class="footer__sauna-info-adress">456601, Челябинская область, г. Копейск, ул. Борьбы 47.</p>
+            <a href="" class="footer__sauna-info-tel tel nunito-fonts"><svg class="call-svg footer__call-svg">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#call"></use>
+              </svg> 8-912-328-11-20</a>
+            <a href="" class="footer__sauna-info-tel tel nunito-fonts"><svg class="whatsapp-svg footer__call-svg">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#whatsapp"></use>
+              </svg> 8-999-587-88-70</a>
+          </div>
+          <div class="footer__sauna-info col-lg-4">
+            <h3 class="footer__sauna-info-heading nunito-fonts">САУНА «5 МОРЕЙ»</h3>
+            <p class="footer__sauna-info-adress">456601, Челябинская область, г. Копейск, ул. Брюсова 10.</p>
+            <a href="" class="footer__sauna-info-tel tel nunito-fonts"><svg class="call-svg footer__call-svg">
+                <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#call"></use>
+              </svg> 8-912-30-90-444</a>
+            <a href="" class="footer__sauna-info-tel tel nunito-fonts"><svg class="whatsapp-svg footer__call-svg">
+              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#whatsapp"></use>
+            </svg> 8-961-79-14-941</a>
+          </div>
+        </div>
+        <p class="footer__working-hours">Мы работаем круглосуточно!</p>
+        <p class="footer__booking">Вы можете забронировать зал ВКонтакте <a href="https://vk.com/public160017216"
+            class="footer__vk-link" target="_blank"><svg class="vk-svg">
+              <use xlink:href="../assets/sprites/assets/sprites/sprite.svg#vk"></use>
+            </svg></a></p>
+      </div>
     </footer>
   </div>
 
-  <script src="./assets/js/main.min.js" type="module"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.min.js"></script>
 </body>
+
 </html>

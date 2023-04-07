@@ -1,0 +1,213 @@
+.pay {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: $blueBg;
+
+  &__heading {
+    margin-bottom: 3%;
+    color: $colorTextSand;
+  }
+
+  &__accordion-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    color: #03142c;
+  }
+
+  &__accordion-body-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__phone-heading {
+    display: flex;
+  }
+
+  &__descr {
+    font-size: 28px
+  }
+
+  &__phone-block {
+    display: flex;
+    padding-top: 3%;
+    justify-content: space-around;
+  }
+
+  &__call-svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  &__accordion-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: center;
+  }
+}
+
+.pay-symbols {
+  font-size: 45px;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 1342px;
+  --bs-accordion-color: #FEF5DE;
+  --bs-accordion-bg: transparent;
+}
+
+.accordion-item {
+  font-size: 21px;
+}
+
+.accordion-body {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: #fef5de3f;
+}
+
+.accordion-button {
+  border-bottom: 1px solid #fef5de57;
+  outline: none;
+  font-size: 38px;
+  font-weight: 400;
+  color: #FEF5DE;
+}
+
+.accordion-item:first-child {
+  border-radius: 0;
+  border-top: 1px solid #fef5de57;
+}
+
+.accordion-button:hover {
+  background-color: #fef5de3f;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: $cardColorText;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #FEF5DE;
+}
+
+.pay__img {
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.pay__accordion-descr-block {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pay__acrr-descr {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link-payment {
+  display: flex;
+  width: 250px;
+  height: 244px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FEF5DE;
+  border-radius: 16px;
+  color: $cardColorText;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  background-color: #FEF5DE;
+}
+
+.link-payment:hover {
+  color: $cardColorText;
+  background-color: transparent;
+}
+
+@media (max-width: 992px) {
+  .pay {
+    &__accordion-divider {
+      display: none;
+    }
+
+    &__descr {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  .pay {
+    &__phone-block {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion-button {
+    font-size: 28px;
+  }
+
+  .pay {
+    &__descr, &__phone-heading {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 592px) {
+  .pay {
+    &__acrr-descr {
+      flex-direction: column;
+    }
+
+    &__img {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .accordion-button {
+    font-size: 20px;
+  }
+
+  .pay {
+    padding-top: 0;
+
+    &__descr, &__phone-heading {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .pay {
+    padding-bottom: 6%;
+  }
+}
+
+@media (max-width: 360px) {
+  .pay {
+    &__descr, &__phone-heading {
+      font-size: 13px;
+    }
+  }
+}

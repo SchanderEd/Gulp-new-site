@@ -1,0 +1,120 @@
+.footer {
+  padding-top: 6%;
+  padding-bottom: 6%;
+  background-color: $blueBg;
+  color: $colorTextSand;
+
+  &__row-top {
+    margin-bottom: 6%;
+  }
+
+  &__heading {
+    font-size: 48px;
+  }
+
+  &__sauna-info-heading {
+    margin-bottom: 13px;
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  &__sauna-info-adress {
+    margin-bottom: 7%;
+    font-weight: 300;
+    font-size: 30px;
+  }
+
+  &__sauna-info-tel {
+    position: relative;
+    display: block;
+    font-size: 32px;
+    color: $colorTextSand;
+  }
+
+   &__call-svg {
+    display: inline-block;
+    position: relative;
+    left: 0;
+    bottom: 5px;
+  }
+
+  &__working-hours, &__booking {
+    font-weight: 400;
+    font-size: 40px;
+  }
+}
+
+.vk-svg {
+  width: 56px;
+  height: 56px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__heading {
+      font-size: 28px;
+    }
+
+    &__sauna-info {
+      padding-top: 30px;
+    }
+
+    &__sauna-info-heading {
+      font-size: 22px;
+    }
+
+    &__sauna-info-adress {
+      margin-bottom: 2%;
+      font-size: 20px;
+    }
+
+    &__sauna-info-tel {
+      font-size: 20px;
+    }
+
+    &__booking, &__working-hours {
+      font-size: 20px;
+    }
+  }
+
+  .vk-svg {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    &__heading, &__sauna-info-heading {
+      font-size: 20px;
+    }
+
+    &__sauna-info-adress, &__sauna-info-tel, &__working-hours, &__booking {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .footer {
+    &__sauna-info {
+      padding-top: 35px;
+    }
+
+    &__sauna-info-heading {
+      font-size: 14px;
+    }
+  }
+
+  .footer__booking, .footer__sauna-info-adress, .footer__sauna-info-tel, .footer__working-hours {
+    font-size: 14px;
+  }
+
+  .call-svg {
+    width: 20px;
+  }
+
+  .vk-svg {
+    width: 30px;
+  }
+}

@@ -8,12 +8,22 @@
   }
 }
 
-@include fonts('Montserrat', url(../fonts/Montserrat-Regular.ttf), 400, swap, normal); // Regular
-@include fonts('Montserrat', url(../fonts/Montserrat-Medium.ttf), 500, swap, normal); // Medium
-@include fonts('Montserrat', url(../fonts/Montserrat-SemiBold.ttf), 700, swap, normal); // Bold
-@include fonts('Montserrat', url(../fonts/Montserrat-ExtraBold.ttf), 800, swap, normal); // ExtraBold
-@include fonts('Montserrat', url(../fonts/Montserrat-Black.ttf), 800, swap, normal);
+@include fonts('OpenSans', url(../fonts/OpenSans-Light.ttf), 300, swap, normal); // Light
+@include fonts('OpenSans', url(../fonts/OpenSans-Regular.ttf), 400, swap, normal); // Regular
+@include fonts('OpenSans', url(../fonts/OpenSans-SemiBold.ttf), 600, swap, normal); // SemiBold
+
+@include fonts('OpenSansCondensed', url(../fonts/OpenSans_Condensed-Regular.ttf), 400, swap, normal); // Regular
+
+@include fonts('NunitoItalic', url(../fonts/Nunito-LightItalic.ttf), 300, swap, normal); // LightItalic
+
+@include fonts('Nunito', url(../fonts/Nunito-Regular.ttf), 400, swap, normal); // Regular
+@include fonts('Nunito', url(../fonts/Nunito-Medium.ttf), 500, swap, normal); // Medium
+@include fonts('Nunito', url(../fonts/Nunito-SemiBold.ttf), 600, swap, normal); // SemiBold
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'OpenSans', sans-serif;
+}
+
+.nunito-fonts {
+  font-family: 'Nunito';
 }

@@ -1,0 +1,518 @@
+.halls {
+  padding-bottom: 3%;
+  padding-top: 5%;
+  background-color: $blueBg;
+
+  .tab-content>.active {
+    display: flex;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15px;
+  }
+
+  &__hall-tab {
+    position: relative;
+  }
+
+  &__middle {
+    justify-content: center;
+  }
+
+  &__hall-tab-content {
+    position: relative;
+    max-width: 1683px;
+  }
+
+  &__hall-card {
+    padding: 5%;
+    background-color: $sandBg;
+    border-radius: 16px;
+  }
+
+  &__top {
+    margin-bottom: 5%;
+  }
+
+  &__heading {
+    font-size: 48px;
+    color: $colorTextSand;
+    text-transform: uppercase;
+  }
+
+  &__sauna-btn {
+    color: $colorTextSand;
+    text-transform: uppercase;
+  }
+
+  &__swiper-halls {
+    max-width: 1342px;
+  }
+
+  &__hall-photo {
+    position: relative;
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  &__hall-card-right {
+    position: relative;
+    height: 100%;
+    margin-bottom: 4%;
+  }
+
+  &__hall-card-left {
+    margin-bottom: 4%;
+  }
+
+  &__hall-heading {
+    margin-bottom: 6%;
+    font-size: 48px;
+    color: $cardColorText;
+  }
+
+  &__hall-services-list {
+    padding-left: 20px;
+    margin-bottom: 8%;
+    color: $cardColorText;
+    list-style: disc;
+  }
+
+  &__hall-price {
+    display: inline-block;
+  }
+
+  &__price-value-block {
+    display: inline-grid;
+  }
+
+  &__hall-price,
+  &__hall-price-value,
+  &__hall-capacity,
+  &__hall-services-descr {
+    font-size: 32px;
+    color: $cardColorText;
+  }
+
+  &__hall-additional-info {
+    font-size: 22px;
+    line-height: 33px;
+    color: $additionalInfo;
+  }
+}
+
+.sauna-swiper-btn {
+  width: 63px;
+  height: 63px;
+}
+
+.nav-tabs .nav-link {
+  width: 420px;
+  height: 90px;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  font-size: 38px;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #ada796;
+}
+
+.item-tabs-btn {
+  max-width: 420px;
+  height: 90px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  width: 420px;
+  height: 90px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  font-size: 38px;
+}
+
+.additional-info-mb {
+  display: none;
+}
+
+.card-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.zoom-svg {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.halls__hall-card-right:hover .zoom-svg {
+  transform: scale(1.2);
+}
+
+.swiper,
+.swiper-container {
+  border-radius: 16px;
+}
+
+.modal-dialog {
+  max-width: 60%;
+}
+
+.people-svg {
+  width: 22px;
+  height: 22px;
+}
+
+.hall-photo {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.modal-content {
+  border-radius: 16px;
+  background-color: $sandBg;
+}
+
+.modal-title {
+  width: 72%;
+  text-align: center;
+  font-size: 32px !important;
+  color: $cardColorText;
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  padding-bottom: 0;
+}
+
+@media (max-width: 1190px) {
+  .halls {
+    padding-bottom: 5%;
+  }
+
+  .modal-title {
+    width: 68%;
+  }
+
+  .sauna-swiper-btn {
+    top: 105%;
+  }
+}
+
+@media (max-width: 1505px) {
+  .halls__swiper-halls {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 1162px) {
+  .modal-title {
+    font-size: 27px !important;
+  }
+
+  .halls {
+    &__top {
+      flex-direction: column;
+    }
+
+    &__heading {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__btns {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .halls {
+    padding-bottom: 12%;
+
+    &__hall-heading {
+      font-size: 28px;
+    }
+
+    &__hall-capacity,
+    &__hall-services-descr {
+      font-size: 22px;
+    }
+
+    &__hall-price-value,
+    &__hall-additional-info {
+      font-size: 20px;
+    }
+
+    &__hall-additional-info {
+      padding-top: 20px;
+    }
+
+    &__hall-card-row {
+      align-items: center;
+    }
+  }
+
+  .capacity {
+    display: none;
+  }
+
+  .cost {
+    display: none;
+  }
+
+  .modal-dialog {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 867px) {
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link, .nav-tabs .nav-link.active {
+      width: 288px;
+      height: 54px;
+      padding: 0;
+      font-size: 14px;
+    }
+}
+
+@media (max-width: 777px) {
+  .halls {
+    &__hall-card-right {
+      padding-left: 5%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .halls {
+    &__heading {
+      margin-bottom: 15px;
+    }
+
+    &__hall-additional-info {
+      display: none;
+    }
+
+    &__hall-card-bottom-row {
+      margin-bottom: 24px;
+    }
+
+    &__hall-card-right {
+      width: 99%;
+      order: 5;
+    }
+  }
+
+  .additional-info-mb {
+    display: block;
+    padding-top: 16%;
+    color: $colorTextSand;
+  }
+
+  @media (max-width: 658px) {
+    .modal-title {
+      font-size: 22px !important;
+    }
+  }
+
+  @media (max-width: 519px) {
+    .modal-title {
+      width: 57%;
+      font-size: 18px !important;
+    }
+  }
+
+  .nav-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .halls {
+    padding-top: 6%;
+    padding-bottom: 10%;
+
+    &__heading {
+      font-size: 22px;
+    }
+
+    &__additional-info-mb {
+      padding-top: 18%;
+    }
+
+    &__hall-heading {
+      font-size: 20px;
+    }
+
+    &__hall-services-descr,
+    &__hall-capacity,
+    &__hall-price-value {
+      font-size: 16px;
+    }
+  }
+
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-link {
+    font-size: 14px;
+  }
+
+  .additional-info-mb {
+    font-size: 13px;
+  }
+
+  .modal-dialog {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 495px) {
+  .halls {
+    padding-bottom: 10%;
+  }
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  margin-right: 20px;
+  color: $colorTextSand;
+  border-radius: 16px;
+  background-color: rgba(25, 52, 78, 0.42);
+}
+
+.arrow-right,
+.arrow-left {
+  width: 76px;
+  height: 76px;
+  fill: #FEF5DE;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: '';
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: '';
+}
+
+.photo-btn-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 867px) {
+  .item-tabs-btn {
+    max-width: 288px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-tabs .nav-link {
+    width: 288px;
+    height: 54px;
+    padding: 10px 28px;
+    font-size: 14px;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    width: 288px;
+    height: 54px;
+    padding: 10px 28px;
+    font-size: 14px;
+  }
+
+  .arrow-right,
+  .arrow-left {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+@media (max-width: 625px) {
+  .nav-tabs .nav-link {
+    width: 148px;
+    height: 33px;
+    padding: 0px 10px;
+    font-size: 14px;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    width: 148px;
+    height: 33px;
+    padding: 0px 10px;
+    font-size: 14px;
+  }
+
+  .halls {
+    &__btns {
+      height: 40px;
+    }
+  }
+
+  .item-tabs-btn {
+    max-width: 148px;
+  }
+}
+
+@media (max-width: 576px) {
+  .arrow-right,
+  .arrow-left {
+    width: 30px;
+    height: 30px;
+  }
+
+  .additional-info-mb {
+    padding-top: 17%;
+  }
+}
+
+@media (max-width: 348px) {
+  .halls__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-tabs .nav-link {
+    margin-right: 0;
+  }
+
+  .nav-tabs .nav-item.show .nav-link,
+  .nav-tabs .nav-link.active {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 324px) {
+  .halls__btns {
+    flex-wrap: nowrap;
+  }
+
+  .halls__heading {
+    margin-bottom: 50px;
+  }
+}

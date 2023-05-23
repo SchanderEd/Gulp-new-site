@@ -41,14 +41,16 @@ const path = {
     images: `${srcPath}assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}`,
     svg: `${srcPath}assets/sprites/*.svg`,
     fonts: `${srcPath}assets/fonts/**/*.{eot,woff,woff2,ttf,svg}`,
+    srcPartialsFolder: `${srcPath}partials/**/*.html`
   },
   watch: {
     html: `${srcPath}*.html`,
     js: `${srcPath}assets/js/*.js`,
-    css: `${srcPath}assets/scss/*.scss`,
+    css: `${srcPath}assets/scss/**/*.scss`,
     images: `${srcPath}assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}`,
     svg: `${srcPath}assets/sprites/*.svg`,
     fonts: `${srcPath}assets/fonts/**/*.{eot,woff,woff2,ttf,svg}`,
+    srcPartialsFolder: `${srcPath}partials/**/*.html`
   },
   clean: `./${distPath}`
 }
@@ -73,7 +75,7 @@ function html() {
 }
 
 function css() {
-  return src(path.src.css, { base: `${srcPath}assets/scss/` })
+  return src(path.src.css, { base: `${srcPath}assets/scss` })
     .pipe(plumber({
       errorHandler: function (err) {
         notify.onError({
@@ -177,6 +179,7 @@ function clean() {
 
 function watchFiles() {
   gulp.watch([path.watch.html], { usePolling: true }, html)
+  gulp.watch([path.watch.srcPartialsFolder], { usePolling: true }, html)
   gulp.watch([path.watch.css], { usePolling: true }, css)
   gulp.watch([path.watch.js], { usePolling: true }, js)
   gulp.watch([path.watch.images], { usePolling: true }, images)

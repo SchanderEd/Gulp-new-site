@@ -68,6 +68,17 @@ function html() {
     .pipe(browserSync.reload({ stream: true }))
 }
 
+function htmlInclude () {
+  return src([`${srcPath}/*.html`])
+    .pipe(fileInclude({
+      prefix: '@',
+      basepath: '@file'
+    }))
+    .pipe(dest(path.build.html))
+    .pipe(browserSync.stream());
+}
+
+
 function css() {
   return src(path.src.css, { base: `${srcPath}assets/scss/` })
     .pipe(plumber({
@@ -171,19 +182,9 @@ function clean() {
   return del(path.clean)
 }
 
-function htmlInclude () {
-  return src([`${srcPath}/*.html`])
-    .pipe(fileInclude({
-      prefix: '@',
-      basepath: '@file'
-    }))
-    .pipe(dest(path.build.html))
-    .pipe(browserSync.stream());
-}
-
 function watchFiles() {
   gulp.watch([path.watch.html], {usePolling: true}, html)
-  gulp.watch(`${srcPath}/*.html`, htmlInclude)
+  gulp.watch(`${srcPath}/*.html`, {usePolling: true}, htmlInclude)
   gulp.watch([path.watch.css], {usePolling: true}, css)
   gulp.watch([path.watch.js], {usePolling: true}, js)
   gulp.watch([path.watch.images], {usePolling: true}, images)

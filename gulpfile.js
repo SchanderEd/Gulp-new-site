@@ -40,7 +40,7 @@ const path = {
     js: `${srcPath}assets/js/*.js`,
     images: `${srcPath}assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}`,
     svg: `${srcPath}assets/sprites/*.svg`,
-    fonts: `${srcPath}assets/fonts/**/*.{eot,woff,woff2,ttf,svg}`
+    fonts: `${srcPath}assets/fonts/**/*.{eot,woff,woff2,ttf,svg}`,
   },
   watch: {
     html: `${srcPath}*.html`,
@@ -48,7 +48,7 @@ const path = {
     css: `${srcPath}assets/scss/*.scss`,
     images: `${srcPath}assets/images/**/*.{jpg,png,svg,gif,ico,webp,webmanifest,xml,json}`,
     svg: `${srcPath}assets/sprites/*.svg`,
-    fonts: `${srcPath}assets/fonts/**/*.{eot,woff,woff2,ttf,svg}`
+    fonts: `${srcPath}assets/fonts/**/*.{eot,woff,woff2,ttf,svg}`,
   },
   clean: `./${distPath}`
 }
@@ -64,20 +64,13 @@ function serve() {
 function html() {
   return src(path.src.html, { base: srcPath })
     .pipe(plumber())
-    .pipe(dest(path.build.html))
-    .pipe(browserSync.reload({ stream: true }))
-}
-
-function htmlInclude () {
-  return src([`${srcPath}/*.html`])
     .pipe(fileInclude({
       prefix: '@',
       basepath: '@file'
     }))
     .pipe(dest(path.build.html))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.reload({ stream: true }))
 }
-
 
 function css() {
   return src(path.src.css, { base: `${srcPath}assets/scss/` })
@@ -183,16 +176,15 @@ function clean() {
 }
 
 function watchFiles() {
-  gulp.watch([path.watch.html], {usePolling: true}, html)
-  gulp.watch(`${srcPath}/*.html`, {usePolling: true}, htmlInclude)
-  gulp.watch([path.watch.css], {usePolling: true}, css)
-  gulp.watch([path.watch.js], {usePolling: true}, js)
-  gulp.watch([path.watch.images], {usePolling: true}, images)
-  gulp.watch([path.watch.svg], {usePolling: true}, svgSprites)
-  gulp.watch([path.watch.fonts], {usePolling: true}, fonts)
+  gulp.watch([path.watch.html], { usePolling: true }, html)
+  gulp.watch([path.watch.css], { usePolling: true }, css)
+  gulp.watch([path.watch.js], { usePolling: true }, js)
+  gulp.watch([path.watch.images], { usePolling: true }, images)
+  gulp.watch([path.watch.svg], { usePolling: true }, svgSprites)
+  gulp.watch([path.watch.fonts], { usePolling: true }, fonts)
 }
 
-const build = gulp.series(clean, gulp.parallel(html, htmlInclude, css, js, images, svgSprites, fonts))
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, svgSprites, fonts))
 const watch = gulp.parallel(build, watchFiles, serve)
 
 exports.html = html

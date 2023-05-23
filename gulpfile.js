@@ -10,6 +10,7 @@ const rename = require("gulp-rename");
 const sass = require("gulp-sass")(require("sass"));
 const cssnano = require("gulp-cssnano");
 const rigger = require("gulp-rigger");
+const fileInclude = require('gulp-file-include');
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
 const sprites = require("gulp-svg-sprite");
@@ -170,8 +171,19 @@ function clean() {
   return del(path.clean)
 }
 
+function htmlInclude () {
+  return src([`${srcPath}/*.html`])
+    .pipe(fileInclude({
+      prefix: '@',
+      basepath: '@file'
+    }))
+    .pipe(dest(path.build.html))
+    .pipe(browserSync.stream());
+}
+
 function watchFiles() {
   gulp.watch([path.watch.html], {usePolling: true}, html)
+  gulp.watch(`${srcPath}/*.html`, htmlInclude)
   gulp.watch([path.watch.css], {usePolling: true}, css)
   gulp.watch([path.watch.js], {usePolling: true}, js)
   gulp.watch([path.watch.images], {usePolling: true}, images)
@@ -179,7 +191,7 @@ function watchFiles() {
   gulp.watch([path.watch.fonts], {usePolling: true}, fonts)
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, svgSprites, fonts))
+const build = gulp.series(clean, gulp.parallel(html, htmlInclude, css, js, images, svgSprites, fonts))
 const watch = gulp.parallel(build, watchFiles, serve)
 
 exports.html = html
